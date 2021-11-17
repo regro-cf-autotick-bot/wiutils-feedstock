@@ -31,9 +31,6 @@ requirements:
 test:
   imports:
     - wiutils
-    - wiutils._dwc
-  commands:
-    - pip check
   requires:
     - pip
 

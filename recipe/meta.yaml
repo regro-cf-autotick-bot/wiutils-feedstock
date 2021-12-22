@@ -1,5 +1,5 @@
 {% set name = "wiutils" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wiutils-{{ version }}.tar.gz
-  sha256: da5e20af6c82d157c686ba39eaa0a7b56016dc88fc05ab3310449cc166f6ae7f
+  sha256: 1750706d6cdd999b4952649dd2264e81966e2734375f3850f9a8e7fd09cf8940
 
 build:
   number: 0

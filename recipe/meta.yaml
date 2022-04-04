@@ -1,5 +1,5 @@
 {% set name = "wiutils" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wiutils-{{ version }}.tar.gz
-  sha256: 1750706d6cdd999b4952649dd2264e81966e2734375f3850f9a8e7fd09cf8940
+  sha256: b1cfb71e7e9e3c30f3ff587ad0ff2bba914d842ec1d81ce3395be03e6cef9600
 
 build:
   number: 0
@@ -21,12 +21,14 @@ requirements:
     - python >=3.6
   run:
     - ffmpeg-python
+    - matplotlib-base
     - numpy
     - opencv
     - openpyxl
     - pandas
     - pillow
     - python >=3.6
+    - seaborn
 
 test:
   imports:
@@ -35,7 +37,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/PEM-Humboldt/wildlife-insights-utils
+  home: https://github.com/PEM-Humboldt/wiutils
   summary: Transformation and exploration utilities for information downloaded from Wildlife Insights projects.
   license: MIT
   license_file: LICENSE.txt

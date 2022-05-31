@@ -1,6 +1,5 @@
 {% set name = "wiutils" %}
-{% set version = "0.2.0" %}
-
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wiutils-{{ version }}.tar.gz
-  sha256: b1cfb71e7e9e3c30f3ff587ad0ff2bba914d842ec1d81ce3395be03e6cef9600
+  sha256: e334b5f664d979f3c7da39b110eaa982eb782488041993ee7fd39ff4e22f5394
 
 build:
   number: 0
@@ -38,7 +37,7 @@ test:
 
 about:
   home: https://github.com/PEM-Humboldt/wiutils
-  summary: Transformation and exploration utilities for information downloaded from Wildlife Insights projects.
+  summary: Exploration utilities for Wildlife Insights projects.
   license: MIT
   license_file: LICENSE.txt
 

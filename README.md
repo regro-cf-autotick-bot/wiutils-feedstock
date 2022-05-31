@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/wiutils-feedstock/blob/main/LICENSE.txt)
 
-Summary: Transformation and exploration utilities for information downloaded from Wildlife Insights projects.
+Summary: Exploration utilities for Wildlife Insights projects.
 
 Current build status
 ====================

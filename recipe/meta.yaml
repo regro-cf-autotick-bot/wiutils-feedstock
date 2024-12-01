@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wiutils-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wiutils-{{ version }}.tar.gz
   sha256: 2d99167c7ed278d47718a77dab21308cb6fcc77f0030a82a2eb9febdf83caf1b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - ffmpeg-python
     - matplotlib-base
@@ -26,7 +26,7 @@ requirements:
     - openpyxl
     - pandas
     - pillow
-    - python >=3.6
+    - python >={{ python_min }}
     - seaborn
 
 test:
@@ -34,6 +34,7 @@ test:
     - wiutils
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/PEM-Humboldt/wiutils
